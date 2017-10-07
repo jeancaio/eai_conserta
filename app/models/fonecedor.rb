@@ -1,0 +1,2 @@
+class Fonecedor < ApplicationRecord
+end

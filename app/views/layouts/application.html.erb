@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E aí, concerta?</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="tudo">
+    <header>
+      <% if user_signed_in? %>
+        <%= render 'layouts/nav_bar_user' %>
+
+      <% end %>
+    </header>
+    <div class="container principal" >
+      <%= yield %>
+      <div class="text-center m-t-lg">
+      </div>
+    </div>
+  </body>
+</html>

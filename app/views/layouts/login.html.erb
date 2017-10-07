@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E aí, concerta?</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="tudo">
+    <header>
+    </header>
+    <div class="container">
+      <% if alert.present?%>
+        <div class="text-center m-t-lg">
+          <div class="alert alert-warning mensagem" role="alert">
+            <p class="alert"><%= alert %></p>
+          </div>
+        </div>
+      <% end %>
+      <%= yield %>
+      <div class="text-center m-t-lg">
+      </div>
+    </div>
+  </body>
+</html>
