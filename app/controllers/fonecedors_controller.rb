@@ -4,7 +4,8 @@ class FonecedorsController < ApplicationController
   # GET /fonecedors
   # GET /fonecedors.json
   def index
-    @fonecedors = Fonecedor.all
+    @q = Fonecedor.ransack(params[:q])
+    @fonecedors = @q.result.paginate(page: params[:page], per_page: 10)
   end
 
   # GET /fonecedors/1

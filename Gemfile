@@ -31,6 +31,10 @@ gem 'simple_form'
 # botstrap
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'ransack'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+
 
 gem 'material_icons'
 
