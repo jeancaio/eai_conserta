@@ -32,6 +32,10 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 
+gem 'material_icons'
+
+# twitter bootstrap
+gem 'twitter-bootstrap-rails'
 
 
 # Use Redis adapter to run Action Cable in production

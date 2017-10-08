@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :clientes
   resources :fonecedors
   devise_for :users
   root to: "home#index"
