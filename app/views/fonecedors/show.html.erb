@@ -19,6 +19,9 @@
   <strong>Descricao:</strong>
   <%= @fonecedor.descricao %>
 </p>
+<p>
+  <strong>Contato:</strong>
+  <%= @fonecedor.contato %>
+</p>
 
-<%= link_to 'Edit', edit_fonecedor_path(@fonecedor) %> |
-<%= link_to 'Back', fonecedors_path %>
+<%= link_to 'Back', fonecedors_path, class: 'btn btn-default' %>

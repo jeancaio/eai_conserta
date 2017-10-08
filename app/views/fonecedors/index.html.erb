@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Fornecedores de serviço</h1>
+<h1>Fornecedores</h1>
 
 <table class="table bordered">
   <thead>
@@ -16,13 +16,10 @@
       <tr>
         <td><%= fonecedor.nome %></td>
         <td><%= fonecedor.tipo_servico %></td>        
-        <td rowspan="1"><%= link_to fonecedor do %>
+        <td rowspan="1"><%= link_to fonecedor, class: 'btn btn-default' do %>
           <span class='glyphicon glyphicon-zoom-in'></span>
           <% end %>
         </td>
-        <td rowspan="1"><%= link_to edit_fonecedor_path(fonecedor) do %>
-          <span class='glyphicon glyphicon-edit'></span>
-          <% end %>
         </td>
       </tr>
     <% end %>
@@ -31,5 +28,5 @@
 
 <br>
 
-<%= link_to 'Incluir', new_fonecedor_path %>
+<%= link_to 'Incluir', new_fonecedor_path, class: 'btn btn-default' %>
 
